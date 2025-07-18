@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WoodWorks Furniture</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f8f1e9;
+    }
+    .navbar {
+      background-color: #3c2f2f;
+    }
+    .navbar-brand, .nav-link {
+      color: #fff !important;
+    }
+    .hero-section {
+      background-image: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c');
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #fff;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+    .hero-section h1 {
+      font-size: 3.5rem;
+      font-weight: bold;
+    }
+    .carousel-item img {
+      height: 400px;
+      object-fit: cover;
+    }
+    .carousel-caption {
+      background: rgba(0, 0, 0, 0.5);
+      border-radius: 5px;
+    }
+    .about-section {
+      background-color: #fff;
+      padding: 60px 0;
+    }
+    .contact-section {
+      background-color: #3c2f2f;
+      color: #fff;
+      padding: 60px 0;
+    }
+    .btn-primary {
+      background-color: #8b5e3c;
+      border-color: #8b5e3c;
+    }
+    .btn-primary:hover {
+      background-color: #a67b5b;
+      border-color: #a67b5b;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">WoodWorks Furniture</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#products">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero-section">
+    <div>
+      <h1>Crafted Wood Furniture</h1>
+      <p class="lead">Timeless designs, handcrafted with care for your home.</p>
+      <a href="#products" class="btn btn-primary btn-lg mt-3">Shop Now</a>
+    </div>
+  </section>
+
+  <!-- Products Section (Carousel) -->
+  <section id="products" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5">Our Collection</h2>
+      <div id="productCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://aarsunwoods.com/wp-content/uploads/2024/04/Luxury-Bedroom-Furniture-Set.jpg" class="d-block w-100" alt="Wooden Table">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Rustic Dining Table</h5>
+              <p>$499.99</p>
+              <a href="#" class="btn btn-primary">View Details</a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://images.unsplash.com/photo-1592078615290-033ee584e267" class="d-block w-100" alt="Wooden Chair">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Classic Wooden Chair</h5>
+              <p>$149.99</p>
+              <a href="#" class="btn btn-primary">View Details</a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://www.canadianwood.in/wp-content/uploads/2018/03/Application-Furniture.png" class="d-block w-100" alt="Wooden BED">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Modern Wooden Shelf</h5>
+              <p>$249.99</p>
+              <a href="#" class="btn btn-primary">View Details</a>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#productCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about-section">
+    <div class="container">
+      <h2 class="text-center mb-5">About WoodWorks</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <p>At WoodWorks, we craft furniture with passion and precision. Our pieces are made from sustainably sourced wood, blending traditional craftsmanship with modern design.</p>
+          <p>Every item is built to last, bringing warmth and character to your home. Explore our collection and find the perfect piece for your space.</p>
+        </div>
+        <div class="col-md-6">
+          <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7" class="img-fluid rounded" alt="Workshop">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <h2 class="text-center mb-5">Get in Touch</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <div id="contactForm">
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" class="form-control" id="name" placeholder="Your name">
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="Your email">
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message" rows="4" placeholder="Your message"></textarea>
+            </div>
+            <button type="button" class="btn btn-primary" onclick="submitForm()">Send Message</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p>© 2025 WoodWorks Furniture. All rights reserved.</p>
+  </footer>
+
+  <!-- Bootstrap JS and Popper.js -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
+  <script>
+    function submitForm() {
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const message = document.getElementById('message').value;
+      if (name && email && message) {
+        alert('Thank you for your message! We will get back to you soon.');
+        document.getElementById('contactForm').reset();
+      } else {
+        alert('Please fill out all fields.');
+      }
+    }
+  </script>
+</body>
+</html>
